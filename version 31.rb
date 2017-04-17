@@ -130,8 +130,16 @@ case $Command
  #User friendly switch
  when "fuck you" , "shit" , "nigger" , "fuck"
  puts "This kind of language is unacceptable!".color(:yellow)
+ sleep(3)
  abort
  
+  when "are you real" then
+    puts "no".color(:yellow)
+    
+  
+  when "are you real" then
+    puts "no".color(:yellow)
+   
   else 
   puts "Sorry I did not understand that".color(:yellow)
 
