@@ -139,6 +139,9 @@ case $Command
   
   when "are you real" then
     puts "no".color(:yellow)
+    
+  when "how was your day" then
+    puts "Pretty uneventful.".color(:yellow)
    
   else 
   puts "Sorry I did not understand that".color(:yellow)
