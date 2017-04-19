@@ -143,6 +143,12 @@ case $Command
   when "how was your day" then
     puts "Pretty uneventful.".color(:yellow)
    
+  when "what is your favourite band" then
+    puts "TwentyOne Pilots".color(:yellow)
+    
+  when "do you like trump" then
+    puts "He is trully our lord and savoir, he's also a great meme".color(:yellow)
+   
   else 
   puts "Sorry I did not understand that".color(:yellow)
 
