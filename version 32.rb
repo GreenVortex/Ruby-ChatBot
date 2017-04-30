@@ -152,12 +152,12 @@ case $Command
   when "encrypt this" then
     $str = gets
     $new_string = [$str].pack("u")
-    puts $new_string
+    puts $new_string.color(:yellow)
     
   when "unencrypt this" then
     $str = gets
     $new_string = [$str].unpack("u")
-    puts $new_string
+    puts $new_string.color(:yellow)
     
   else 
   puts "Sorry I did not understand that".color(:yellow)
