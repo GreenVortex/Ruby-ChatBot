@@ -150,11 +150,13 @@ case $Command
     puts "He is trully our lord and savoir, he's also a great meme".color(:yellow)
    
   when "encrypt this" then
+    puts "Enter the text you want to encrypt".color(:cyan)
     $str = gets
     $new_string = [$str].pack("u")
     puts $new_string.color(:yellow)
     
-  when "unencrypt this" then
+  when "decrypt this" then
+    puts "Enter the text you want to decrypt".color(:cyan)
     $str = gets
     $new_string = [$str].unpack("u")
     puts $new_string.color(:yellow)
