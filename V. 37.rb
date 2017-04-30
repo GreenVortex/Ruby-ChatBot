@@ -61,7 +61,7 @@ case $Command
 
  when "tell me a joke" then puts "I can't do funny, my creator had to much depression".color(:yellow)
 
- when "/info" then puts "Version 31 @Ruby 2.3.1".color(:yellow)
+ when "/info" then puts "Version 37 @Ruby 2.3.1".color(:yellow)
 
  when "remember" then puts "What would you like me to remember?".color(:yellow)
  Reminder_Cache = File.new("Reminder_cache", "w+")
