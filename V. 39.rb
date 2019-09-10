@@ -1,5 +1,5 @@
 #Required gems
-require 'rainbow/ext/string' 
+require 'rainbow/ext/string'
 require 'net/http'
 require 'uri'
 
@@ -21,13 +21,13 @@ puts "I'll remeber that for our next session".color(:yellow)
 puts ""
 end
 
-#Command requirements 
+#Command requirements
 $Date = Time.now
 
 def open(url)
   Net::HTTP.get(URI.parse(url))
 end
- 
+
 
 
 #Command Logic
@@ -48,7 +48,7 @@ case $Command
   when "exit" then puts "Bye".color(:yellow)
        $wait = gets
        abort
-       
+
   when "what is the answer to life the universe and everything" then puts "42".color(:cyan)
 
   when "who is your creator" then puts "The amazing...(Wait for it!)".color(:yellow)
@@ -70,12 +70,12 @@ case $Command
  Reminder_Cache.puts $Reminder
  Reminder_Cache.close
 
- when "remind me" then 
+ when "remind me" then
  $Reminder_Check = File.exist?("Reminder_cache")
  if $Reminder_Check == true then
  $Reminder = File.read("Reminder_cache")
  puts "Here's the thing you told me to remember:".color(:yellow) + $Reminder.color(:cyan)
- else 
+ else
  puts "You did not tell me to 'remember' anything"
  end
 
@@ -100,13 +100,13 @@ case $Command
  when "what is your favourite sport" then puts "competitive eating!".color(:yellow)
 
  when "do you like sports" then puts "Hell no!".color(:yellow)
- 
+
  when "cheese" then puts "Cheese!".color(:yellow)
- 
- when "/source" then 
+
+ when "/source" then
  source_temp = File.read("index.rb")
  puts source_temp.color(:cyan)
- 
+
  when "delete system32"
  puts "You sure?".color(:yellow)
  $System32_Prompt = gets.strip
@@ -114,54 +114,54 @@ case $Command
  puts "Nah".color(:yellow)
  elsif $System32_Prompt == "no"
    puts "Good choice, don't touch it!".color(:yellow)
- else 
+ else
    puts "You haven't answered my question properly, but anyway, just leave it alone!".color(:yellow)
  end
- 
- when "let me do a command" then 
+
+ when "let me do a command" then
  puts "What should it be?".color(:yellow)
  $Output_Command = gets
  system($Output_Command)
- 
+
  #12 year old proofing
  when "fuck me" , "love me" , "do you love me" , "I love you" , "will you marry me" , "drink bleach" , "daddy" , "kill me" then
- puts "CALM DOWN!".color(:yellow) 
+ puts "CALM DOWN!".color(:yellow)
 
  #User friendly switch
  when "fuck you" , "shit" , "nigger" , "fuck"
  puts "This kind of language is unacceptable!".color(:yellow)
  sleep(3)
  abort
- 
+
   when "are you real" then
     puts "no".color(:yellow)
-    
-  
+
+
   when "are you real" then
     puts "no".color(:yellow)
-    
+
   when "how was your day" then
     puts "Pretty uneventful.".color(:yellow)
-   
+
   when "what is your favourite band" then
     puts "TwentyOne Pilots".color(:yellow)
-    
+
   when "do you like trump" then
     puts "He is trully our lord and savoir, he's also a great meme".color(:yellow)
-   
+
   when "encrypt this" then
     puts "Enter the text you want to encrypt".color(:cyan)
     $str = gets
     $new_string = [$str].pack("u")
     puts $new_string.color(:yellow)
-    
+
   when "decrypt this" then
     puts "Enter the text you want to decrypt".color(:cyan)
     $str = gets
     $new_string = [$str].unpack("u")
     puts $new_string.color(:yellow)
-    
-  else 
+
+  else
   puts "Sorry I did not understand that".color(:yellow)
 
 
