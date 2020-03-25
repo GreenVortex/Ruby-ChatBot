@@ -1,8 +1,5 @@
 #Required gems
 require 'rainbow/ext/string'
-require 'net/http'
-require 'uri'
-
 
 #Name Check
 NameCheck = File.exist?("Name_cache")
@@ -24,18 +21,12 @@ end
 #Command requirements
 $Date = Time.now
 
-def open(url)
-  Net::HTTP.get(URI.parse(url))
-end
-
-
-
 #Command Logic
 loop do
 puts ""
 $Command = gets.strip
 case $Command
-  when "date" then puts "Here is today's date ".color(:yellow) + $Date.to_s
+when "date" then puts "Here is today's date ".color(:yellow) + $Date.to_s
 
   when "hi" then puts "Hi there".color(:yellow)
 
