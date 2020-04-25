@@ -1,4 +1,4 @@
-# RubyAI
+# Ruby ChatBot
 An Open Source AI programmed in Ruby
 
 This project requires:
