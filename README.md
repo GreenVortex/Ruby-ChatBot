@@ -27,4 +27,4 @@ ruby Main.rb
 
 Give a ⭐️ if this project helped you!
 
-Readme created with ❤️ using [NESS](https://github.com/GreenVortex/C-/tree/master/Ness)
+Readme created with ❤️ using [NESS](https://github.com/GreenVortex/Ness)
