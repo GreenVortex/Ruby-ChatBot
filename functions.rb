@@ -39,3 +39,8 @@ def Remind()
   puts "You did not tell me to 'remember' anything"
   end
 end
+
+def Confusion()
+  puts ""
+  puts @Confused[Random.rand(0..2)].color(:red)
+end

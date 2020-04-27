@@ -8,16 +8,14 @@ NameCheck()
 
 #Command Logic
 loop do
-puts ""
-@Command = gets
-case @Command
-
-when @Command["date"] then DateDisplay()
-when @Command["remember"] then RemembeForUser()
-when @Command["remind"] then Remind()
-
-
-end #End of case
+  puts ""
+  @Command = gets.strip
+    case @Command
+    when @Command["date"] then DateDisplay()
+    when @Command["remember"] then RemembeForUser()
+    when @Command["remind"] then Remind()
+    else Confusion()
+  end #End of case
 end #End of loop
 
 #logger
