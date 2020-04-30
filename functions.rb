@@ -42,5 +42,5 @@ end
 
 def Confusion()
   puts ""
-  puts @Confused[Random.rand(0..2)].color(:red)
+  puts @Confused.sample.color(:red)
 end

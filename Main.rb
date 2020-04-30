@@ -14,6 +14,7 @@ loop do
     when @Command["date"] then DateDisplay()
     when @Command["remember"] then RemembeForUser()
     when @Command["remind"] then Remind()
+    when @Command["hi"] then puts "\n" + @Hello.sample.color(:green)
     else Confusion()
   end #End of case
 end #End of loop
