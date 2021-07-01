@@ -9,10 +9,10 @@ elsif @NameCheck == false then
   @Cache = File.new("Name_cache", "w+")
   puts "Hi!, What's your name?".color(:yellow)
   @Username = gets
-  @Cache.puts Username
+  @Cache.puts @Username
   @Cache.close
   @Name_cache = File.read("Name_cache")
-  puts "I'll remeber that for our next session".color(:yellow)
+  puts "I'll remember that for our next session".color(:yellow)
   puts ""
   end
 end
